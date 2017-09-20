@@ -548,7 +548,6 @@ setupApacheIgniteService(){
 	echo "change Ignite HOME files and folders permissions"
 
 	find $IGNITE_HOME -type d -exec chmod 755 {} \;
-
 	find $IGNITE_HOME -type f -exec chmod 755 {} \;
 
 	
@@ -557,11 +556,11 @@ setupApacheIgniteService(){
 
 	cd $HADOOP_HOME/lib;
 
-	ln -sf $IGNITE_HOME/libs/ignite-core-2.2.0.jar;
+	ln -sf $IGNITE_HOME/libs/ignite-core-2.1.0.jar;
 
 	ln -sf $IGNITE_HOME/libs/ignite-shmem-1.0.0.jar;
 
-	ln -sf $IGNITE_HOME/libs/ignite-hadoop/ignite-hadoop-2.2.0.jar;
+	ln -sf $IGNITE_HOME/libs/ignite-hadoop/ignite-hadoop-2.1.0.jar;
 
 	
 
@@ -571,9 +570,9 @@ setupApacheIgniteService(){
 
 	ln -sf /usr/hdp/current/hadoop-client/hadoop-azure.jar;
 
-	ln -sf /usr/hdp/current/hadoop-client/lib/azure-storage-4.2.0.jar;
+	ln -sf /usr/hdp/current/hadoop-client/lib/azure-storage-5.5.0.jar;
 
-	ln -sf /usr/hdp/current/hadoop-client/lib/azure-keyvault-core-0.8.0.jar;
+	ln -sf /usr/hdp/current/hadoop-client/lib/azure-keyvault-core-1.0.0.jar;
 
 	
 
